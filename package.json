@@ -1,0 +1,20 @@
+{
+    "name": "tutorial-mongodb",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/gmahechas/tutorial-mongodb.git",
+    "author": "gmahechas <gmahechas@ingenieros.com>",
+    "license": "MIT",
+    "scripts": {
+        "start": "ts-node-dev --respawn --pretty --transpile-only src/index.ts",
+        "start:prod": "node dist",
+        "build": "rimraf dist && tsc"
+    },
+    "dependencies": {
+        "mongoose": "^6.8.1"
+    },
+    "devDependencies": {
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^4.9.4"
+    }
+}
